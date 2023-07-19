@@ -1,10 +1,15 @@
 import React from "react";
+import {AppBar, Toolbar, Typography} from "@mui/material";
 
 const Header = () => {
     return (
-        <div>
-
-        </div>
+        <AppBar position="static">
+            <Toolbar>
+                <Typography variant="h6">
+                    Todo
+                </Typography>
+            </Toolbar>
+        </AppBar>
     );
 };
 
