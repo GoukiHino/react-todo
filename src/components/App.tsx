@@ -1,4 +1,5 @@
 import React from "react";
+import {RecoilRoot} from "recoil";
 import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
 import {grey, indigo} from "@mui/material/colors";
 
@@ -17,10 +18,12 @@ const theme = createTheme({
 
 function App() {
     return (
-        <ThemeProvider theme={theme}>
-            <CssBaseline/>
-            <HomePage/>
-        </ThemeProvider>
+        <RecoilRoot>
+            <ThemeProvider theme={theme}>
+                <CssBaseline/>
+                <HomePage/>
+            </ThemeProvider>
+        </RecoilRoot>
     );
 }
 
