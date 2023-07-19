@@ -1,10 +1,16 @@
 import React from "react";
+import {Link, Typography} from "@mui/material";
+
 
 const Footer = () => {
     return (
-        <div>
-
-        </div>
+        <Typography variant="body2" color="secondary.main" align="center">
+            Copyright &copy;
+            {" "}
+            {new Date().getFullYear()}
+            {" "}
+            <Link color="inherit" href="https://material-ui.com/">Your Website</Link>
+        </Typography>
     );
 };
 
