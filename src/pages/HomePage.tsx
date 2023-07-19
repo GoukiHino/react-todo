@@ -1,8 +1,12 @@
 import React from "react";
+import TodoContainer from "../components/todo/TodoContainer";
+import Layout from "../components/template/Layout";
 
 const HomePage = () => {
     return (
-        <h2>Home Page</h2>
+        <Layout>
+            <TodoContainer/>
+        </Layout>
     );
 };
 
